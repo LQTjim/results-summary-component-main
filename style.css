@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+:root {
+  --primary-light-red: hsl(0, 100%, 67%);
+  --primary-orangey-yellow: hsl(39, 100%, 56%);
+  --primary-green-teal: hsl(166, 100%, 37%);
+  --primary-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* (background) */
+  --primary-light-slate-blue: hsl(252, 100%, 67%);
+  --primary-light-royal-blue: hsl(241, 81%, 54%);
+
+  /* circle */
+  --primary-violet-blue: hsla(256, 72%, 46%, 1);
+  --primary-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-pale-blue: hsl(221, 100%, 96%);
+  --neutral-light-lavender: hsl(241, 100%, 89%);
+  --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  width: 740px;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+}
+.result-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    var(--primary-light-slate-blue),
+    var(--primary-light-royal-blue)
+  );
+  padding: 45px 50px 60px;
+}
+.title {
+  color: var(--neutral-light-lavender);
+}
+.score-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 20px;
+
+  color: var(--neutral-light-lavender);
+  background: linear-gradient(
+    var(--primary-violet-blue),
+    var(--primary-persian-blue)
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.your-score {
+  font-size: 50px;
+  color: var(--neutral-white);
+}
+.result-content h2 {
+  font-size: 24px;
+  color: var(--neutral-white);
+}
+.comment {
+  color: var(--neutral-light-lavender);
+  text-align: center;
+}
+.summary-content {
+  padding: 45px 40px 50px;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary-content i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reaction {
+}
+.memory {
+}
+.verbal {
+}
+.visual {
+}
+.summary-content button {
+  width: 100%;
+}
